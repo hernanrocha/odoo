@@ -21,6 +21,9 @@
                     t-attf-src="https://www.facebook.com/tr?id={{ website.facebook_pixel_key }}&amp;ev=PageView&amp;noscript=1"/>
             </noscript>
             
+            <meta t-if="website and website.facebook_domain_verification_code and not editable"
+                name="facebook-domain-verification" t-attf-content="{{website.facebook_domain_verification_code}}" />
+
         </xpath>
     </template>
 
