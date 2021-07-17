@@ -23,11 +23,6 @@
                                 <field name="facebook_pixel_key" placeholder="XXXXXXXXXXXXXXX"
                                     attrs="{'required': [('has_facebook_pixel', '=', True)]}"/>
                             </div>
-                            <div class="row mt16">
-                                <label class="col-lg-3 o_light_label" string="Domain Verification Code" for="facebook_domain_verification_code"/>
-                                <field name="facebook_domain_verification_code" placeholder="XXXXXXXXXXXXXXX"
-                                    attrs="{'required': [('has_facebook_pixel', '=', True)]}"/>
-                            </div>
                         </div>
                         <div attrs="{'invisible': [('has_facebook_pixel', '=', False)]}" name="facebook_pixel_help">
                             <a href="https://www.facebook.com/business/help/952192354843755"
